@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+  {%csrf_token%}
+    <!-- {%include "base.html" %} -->
+  <center> <h1> {{title}}</center></h1>
+
+    <form method="post"> {%csrf_token%}
+        {{form.as_p}}
+        <button type="submit">Search</button>
+    </form>
+</html>
